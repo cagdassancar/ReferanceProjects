@@ -1,0 +1,6 @@
+Projede kullanýlanlar
+
+-> ASP.net Core MVC (.Net 7.0)
+-> Redis (Microsoft Open Tech 3.0.504) https://github.com/MSOpenTech/redis/releases
+
+
