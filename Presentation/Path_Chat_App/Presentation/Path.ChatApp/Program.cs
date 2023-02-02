@@ -1,3 +1,4 @@
+using Path.Core.Interfaces;
 using Path.Infrastructure.RedisManager;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 //Redis managerin uygulama içerisinde kullanýlmasý için Scope'a tanýmlýyoruz
-builder.Services.AddScoped<RDM>();
+builder.Services.AddScoped<IRedisBase,RDM>();
 
 var app = builder.Build();
 
