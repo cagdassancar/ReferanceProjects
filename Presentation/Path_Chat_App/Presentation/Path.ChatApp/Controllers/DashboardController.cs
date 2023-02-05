@@ -17,12 +17,15 @@ namespace Path.ChatApp.Controllers
 
         public IActionResult Index()
         {
-            _redis.SetLoginUser(new LoginUser() { SessionID = "11111", UserName = "Cagdas" });
-            _redis.SetLoginUser(new LoginUser() { SessionID = "22222", UserName = "Samed" });
-            _redis.SetLoginUser(new LoginUser() { SessionID = "33333", UserName = "Elcim" });
 
-            IEnumerable<LoginUser> userList = _redis.GetAllLoginUser();
-            
+            //_redis.SetLoginUser(new LoginUser() { SessionID = "11111", UserName = "Cagdas" });
+            //_redis.SetLoginUser(new LoginUser() { SessionID = "22222", UserName = "Samed" });
+            //_redis.SetLoginUser(new LoginUser() { SessionID = "33333", UserName = "Emine" });
+
+            //List<LoginUser> userList = _redis.GetLoginUsers();
+
+            //_redis.RemoveLoginUser(new LoginUser() { SessionID = "22222", UserName = "Samed" });
+            //List<LoginUser> userList2 = _redis.GetLoginUsers();
 
             return View();
         }
